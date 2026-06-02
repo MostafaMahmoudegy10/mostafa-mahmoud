@@ -3,7 +3,7 @@ import { ArrowUpRight, ImagePlus, Star } from 'lucide-react'
 import { fadeUp } from '../../animations/variants'
 import { copy } from '../../data/portfolio'
 import type { Lang, Project } from '../../types'
-import { ProjectDiagram } from './ProjectDiagram'
+import { ProjectPreview } from './ProjectPreview'
 
 type ProjectCardProps = {
   project: Project
@@ -16,6 +16,8 @@ export function ProjectCard({ project, lang, index, onOpen }: ProjectCardProps) 
   const t = copy[lang]
   const Icon = project.icon
   const previewImage = project.screenshots?.[0]?.src
+  const projectSummary =
+    (typeof project.businessValue === 'string' ? project.businessValue : project.businessValue?.[lang]) || project.description[lang]
 
   return (
     <motion.article
@@ -25,18 +27,10 @@ export function ProjectCard({ project, lang, index, onOpen }: ProjectCardProps) 
     >
       <div className={project.featured ? 'grid gap-0 lg:grid-cols-[1.08fr_0.92fr]' : 'grid'}>
         <div className="relative min-h-64 overflow-hidden border-b border-slate-200/70 bg-slate-50 lg:border-b-0 lg:border-r">
-          {previewImage ? (
-            <img
-              src={previewImage}
-              alt={`${project.title} project preview`}
-              className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
-            />
-          ) : (
-            <ProjectDiagram icon={Icon} />
-          )}
-          <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/28 to-transparent" />
+          <ProjectPreview project={project} />
+          <div className="absolute inset-0 bg-linear-to-t from-white/82 via-white/12 to-transparent" />
           <motion.div
-            className="absolute inset-x-8 bottom-7 h-px origin-left bg-gradient-to-r from-bluewave via-orangecore to-transparent"
+            className="absolute inset-x-8 bottom-7 h-px origin-left bg-linear-to-r from-bluewave via-orangecore to-transparent"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -75,38 +69,15 @@ export function ProjectCard({ project, lang, index, onOpen }: ProjectCardProps) 
             </button>
           </div>
 
-          <p className="mt-5 text-sm leading-7 text-muted">{project.description[lang]}</p>
+          <p className="mt-5 text-sm leading-7 text-muted">{projectSummary}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            {project.features[lang].slice(0, project.featured ? 8 : 5).map((feature) => (
+            {project.features[lang].slice(0, project.featured ? 7 : 5).map((feature) => (
               <span key={feature} className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-600 shadow-sm">
                 {feature}
               </span>
             ))}
           </div>
-
-          <div className="mt-6 flex flex-wrap gap-2">
-            {project.stack.map((item) => (
-              <span key={item} className="rounded-lg bg-slate-100 px-3 py-2 text-xs font-bold text-slate-700">
-                {item}
-              </span>
-            ))}
-          </div>
-
-          {project.links?.length ? (
-            <div className="mt-6 flex flex-wrap gap-2">
-              {project.links.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="inline-flex items-center gap-2 rounded-lg border border-orange-200 bg-orange-50 px-3 py-2 text-xs font-bold text-orange-700 transition hover:bg-orange-100"
-                >
-                  {link.label}
-                  <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
-              ))}
-            </div>
-          ) : null}
         </div>
       </div>
     </motion.article>
