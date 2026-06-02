@@ -26,9 +26,10 @@ export function Contact({ lang }: { lang: Lang }) {
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} className="grid gap-3">
             {contactItems.map((item) => {
               const Icon = item.icon
+              const itemLabel = typeof item.label === 'string' ? item.label : item.label[lang]
               return (
                 <motion.a
-                  key={item.label}
+                  key={itemLabel}
                   variants={fadeUp}
                   whileHover={{ x: lang === 'ar' ? -7 : 7 }}
                   href={item.href}
@@ -41,7 +42,7 @@ export function Contact({ lang }: { lang: Lang }) {
                       <Icon className="h-5 w-5" />
                     </span>
                     <span>
-                      <span className="block text-sm font-bold text-slate-950">{item.label}</span>
+                      <span className="block text-sm font-bold text-slate-950">{itemLabel}</span>
                       <span className="mt-1 block text-sm text-muted">{item.value}</span>
                     </span>
                   </span>

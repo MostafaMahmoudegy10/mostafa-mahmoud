@@ -17,7 +17,7 @@ export function ProjectModal({ project, lang, onClose }: ProjectModalProps) {
     <AnimatePresence>
       {project ? (
         <motion.div
-          className="fixed inset-0 z-[70] grid place-items-center bg-slate-950/30 p-4 backdrop-blur-xl"
+          className="fixed inset-0 z-70 grid place-items-center bg-slate-950/30 p-4 backdrop-blur-xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -33,7 +33,14 @@ export function ProjectModal({ project, lang, onClose }: ProjectModalProps) {
           >
             <div className="flex items-start justify-between gap-4 border-b border-slate-200 p-5">
               <div>
-                <p className="text-sm font-bold text-blue-600">{project.subtitle ?? t.projects.featured}</p>
+                {project.businessCategory && (
+                  <p className="text-sm font-bold text-orange-600">
+                    {typeof project.businessCategory === 'string' ? project.businessCategory : project.businessCategory[lang]}
+                  </p>
+                )}
+                {project.subtitle && (
+                  <p className="text-sm font-bold text-blue-600">{project.subtitle}</p>
+                )}
                 <h3 className="mt-2 text-3xl font-black text-slate-950">{project.title}</h3>
               </div>
               <button
@@ -53,26 +60,54 @@ export function ProjectModal({ project, lang, onClose }: ProjectModalProps) {
                 ) : (
                   <ProjectDiagram icon={project.icon} />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-white/85 via-white/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-white/85 via-white/20 to-transparent" />
               </div>
 
               <div className="space-y-6">
-                <p className="leading-7 text-muted">{project.description[lang]}</p>
+                <div>
+                  <p className="leading-7 text-muted">{project.description[lang]}</p>
+                </div>
+
+                {project.businessValue && (
+                  <div>
+                    <h4 className="mb-3 font-bold text-slate-950">Business Value</h4>
+                    <p className="text-sm leading-6 text-slate-700">
+                      {typeof project.businessValue === 'string' ? project.businessValue : project.businessValue[lang]}
+                    </p>
+                  </div>
+                )}
+
+                {project.businessProblems && project.businessProblems[lang]?.length ? (
+                  <div>
+                    <h4 className="mb-3 font-bold text-slate-950">Problems Solved</h4>
+                    <ul className="space-y-2">
+                      {project.businessProblems[lang].map((problem) => (
+                        <li key={problem} className="flex items-start gap-2 text-sm text-slate-700">
+                          <span className="mt-1.5 shrink-0 h-1.5 w-1.5 rounded-full bg-bluewave" />
+                          <span>{problem}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
 
                 {project.links?.length ? (
                   <div>
                     <h4 className="mb-3 font-bold text-slate-950">{t.projects.links}</h4>
                     <div className="flex flex-wrap gap-2">
-                      {project.links.map((link) => (
-                        <a
-                          key={link.label}
-                          href={link.href}
-                          className="inline-flex items-center gap-2 rounded-lg border border-orange-200 bg-orange-50 px-3 py-2 text-xs font-bold text-orange-700 transition hover:bg-orange-100"
-                        >
-                          {link.label}
-                          <ArrowUpRight className="h-3.5 w-3.5" />
-                        </a>
-                      ))}
+                      {project.links.map((link) => {
+                        const linkLabel = typeof link.label === 'string' ? link.label : link.label[lang]
+                        return (
+                          <a
+                            key={linkLabel}
+                            href={link.href}
+                            className="inline-flex items-center gap-2 rounded-lg border border-orange-200 bg-orange-50 px-3 py-2 text-xs font-bold text-orange-700 transition hover:bg-orange-100"
+                          >
+                            {linkLabel}
+                            <ArrowUpRight className="h-3.5 w-3.5" />
+                          </a>
+                        )
+                      })}
                     </div>
                   </div>
                 ) : null}

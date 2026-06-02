@@ -1,10 +1,8 @@
 import {
-  ArrowUpRight,
-  BarChart3,
-  Brush,
   CheckCircle2,
   CloudUpload,
   Code2,
+  Brush,
   Cpu,
   Gauge,
   Handshake,
@@ -52,7 +50,7 @@ export const copy = {
   en: {
     dir: 'ltr',
     nextLocale: 'AR',
-    nav: ['Work', 'Results', 'Services', 'Process', 'Why Me', 'Contact'],
+    nav: ['Featured Projects', 'Results', 'Services', 'Process', 'Why Me', 'Contact'],
     hero: {
       kicker: 'Software Engineer based in Giza, Egypt',
       name: 'Mostafa Mahmoud',
@@ -63,38 +61,38 @@ export const copy = {
       typing: ['Products', 'Websites', 'Dashboards', 'MVPs', 'Business Solutions'],
     },
     projects: {
-      eyebrow: 'Featured Work',
-      title: 'Product-focused work with clean interfaces and practical engineering.',
+      eyebrow: 'Featured Projects',
+      title: 'Real projects I\'ve built for businesses. Each project solves real business problems.',
       preview: 'Explore project',
       close: 'Close',
       features: 'Inside the project',
       stack: 'Stack',
       highlight: 'Project note',
-      links: 'Configurable links',
-      screenshots: 'Screenshots',
+      links: 'Project Links',
+      screenshots: 'Project Gallery',
       featured: 'Featured Project',
       placeholder: 'Ready for your next screenshots and links',
     },
     stats: {
       eyebrow: 'Results',
-      title: 'A compact view of the momentum behind the work.',
+      title: 'A compact view of what I\'ve accomplished.',
     },
     services: {
-      eyebrow: 'What I Can Help You With',
-      title: 'From first idea to a polished digital product.',
+      eyebrow: 'What I Can Build For You',
+      title: 'Services and packages I offer to help your business grow.',
     },
     process: {
-      eyebrow: 'Process',
-      title: 'A clear path from rough idea to something people can use.',
+      eyebrow: 'How We Build Your Product',
+      title: 'A clear process from your idea to a working product.',
     },
     why: {
       eyebrow: 'Why Work With Me',
-      title: 'A mix of engineering discipline and product taste.',
+      title: 'A mix of engineering discipline and product thinking.',
     },
     contact: {
       eyebrow: 'Contact',
-      title: "Let's build something useful.",
-      copy: 'Have an idea, dashboard, website, MVP, or backend system in mind? Reach out and I will help shape it into a real product.',
+      title: 'Have an idea? Let\'s turn it into a real product.',
+      copy: 'Let\'s discuss your project, timeline, and goals. I\'ll help you build something that works.',
       name: 'Your name',
       email: 'Email address',
       message: 'Tell me about your idea',
@@ -108,7 +106,7 @@ export const copy = {
   ar: {
     dir: 'rtl',
     nextLocale: 'EN',
-    nav: ['الأعمال', 'النتائج', 'الخدمات', 'الخطوات', 'لماذا أنا', 'تواصل'],
+    nav: ['المشاريع المميزة', 'النتائج', 'الخدمات', 'الخطوات', 'لماذا أنا', 'تواصل'],
     hero: {
       kicker: 'مهندس برمجيات من الجيزة، مصر',
       name: 'مصطفى محمود',
@@ -119,38 +117,38 @@ export const copy = {
       typing: ['منتجات', 'مواقع', 'لوحات تحكم', 'MVPs', 'حلول أعمال'],
     },
     projects: {
-      eyebrow: 'أعمال مميزة',
-      title: 'مشاريع مبنية حول تجربة واضحة وهندسة عملية.',
+      eyebrow: 'المشاريع المميزة',
+      title: 'مشاريع حقيقية بنيتها لعملاء في الأعمال. كل مشروع يحل مشاكل أعمال حقيقية.',
       preview: 'عرض المشروع',
       close: 'إغلاق',
       features: 'داخل المشروع',
       stack: 'التقنيات',
       highlight: 'ملاحظة المشروع',
-      links: 'روابط قابلة للتعديل',
-      screenshots: 'الصور',
+      links: 'روابط المشروع',
+      screenshots: 'معرض المشروع',
       featured: 'المشروع الأهم',
       placeholder: 'جاهز لإضافة الصور والروابط لاحقًا',
     },
     stats: {
       eyebrow: 'النتائج',
-      title: 'نظرة مختصرة على الحركة والإنجاز داخل الأعمال.',
+      title: 'ملخص لما أنجزته حتى الآن.',
     },
     services: {
-      eyebrow: 'كيف أساعدك',
-      title: 'من أول فكرة إلى منتج رقمي جاهز.',
+      eyebrow: 'ما الذي أستطيع بناءه لك',
+      title: 'الخدمات والحزم التي أقدمها لمساعدة عملك على النمو.',
     },
     process: {
-      eyebrow: 'الخطوات',
-      title: 'مسار واضح من فكرة أولية إلى منتج قابل للاستخدام.',
+      eyebrow: 'كيف نبني منتجك',
+      title: 'عملية واضحة من فكرتك إلى منتج يعمل فعلاً.',
     },
     why: {
       eyebrow: 'لماذا تعمل معي',
-      title: 'مزيج من الانضباط الهندسي والذوق في بناء المنتجات.',
+      title: 'مزيج من الانضباط الهندسي والتفكير المنتج-محور.',
     },
     contact: {
       eyebrow: 'تواصل',
-      title: 'لنبني شيئًا مفيدًا.',
-      copy: 'لديك فكرة أو لوحة تحكم أو موقع أو MVP أو نظام backend؟ تواصل معي وسأساعدك في تحويلها إلى منتج حقيقي.',
+      title: 'لديك فكرة؟ لنحولها إلى منتج حقيقي.',
+      copy: 'لنناقش مشروعك والمواعيد والأهداف. سأساعدك في بناء شيء يعمل بشكل جيد.',
       name: 'الاسم',
       email: 'البريد الإلكتروني',
       message: 'احكي لي عن فكرتك',
@@ -171,36 +169,62 @@ export const projects: Project[] = [
     subtitle: 'Fashion Social Commerce Platform',
     featured: true,
     icon: ShoppingBag,
+    businessCategory: {
+      en: 'Completed Project',
+      ar: 'مشروع مكتمل',
+    },
     description: {
-      en: 'A fashion social-commerce platform that connects customers, brands, and models through shopping flows, collaboration workflows, product management, search, notifications, and secure accounts.',
-      ar: 'منصة fashion social-commerce تربط العملاء والبراندات والمودلز من خلال تجربة شراء، تعاون، إدارة منتجات، بحث، إشعارات، وحسابات آمنة.',
+      en: 'StyleHub is a fashion social-commerce and multi-vendor e-commerce platform that connects customers, fashion brands, and models in one ecosystem. The platform allows customers to discover and buy products, brands to manage their stores and orders, and models to collaborate with brands on fashion campaigns.',
+      ar: 'StyleHub منصة fashion social-commerce وتجارة إلكترونية متعددة البائعين تربط العملاء والبراندات والمودلز في نظام واحد. تسمح المنصة للعملاء باكتشاف المنتجات والشراء، والبراندات بإدارة متاجرهم وطلباتهم، والمودلز بالتعاون مع البراندات على حملات أزياء.',
+    },
+    businessValue: {
+      en: 'StyleHub helps fashion businesses sell online, manage products, collaborate with models, track orders, and create a smoother shopping experience for customers.',
+      ar: 'تساعد StyleHub عمليات أزياء تبيع أونلاين، إدارة المنتجات، التعاون مع المودلز، تتبع الطلبات، وخلق تجربة شراء أفضل للعملاء.',
+    },
+    businessProblems: {
+      en: ['Limited online presence', 'Manual order management', 'No brand-model collaboration tools', 'Fragmented customer experience'],
+      ar: ['حضور أونلاين محدود', 'إدارة طلبات يدوية', 'عدم وجود أدوات تعاون براند-مودل', 'تجربة عملاء غير منسقة'],
     },
     features: {
       en: [
-        'Customer System',
-        'Brand Dashboard',
-        'Model Collaboration',
-        'Product Management',
+        'Customer shopping experience',
+        'Brand dashboard',
+        'Model dashboard',
+        'Brand/model collaboration workflow',
+        'Product catalog',
+        'Product variants',
+        'Cart & Wishlist',
+        'Checkout',
+        'Ratings and reviews',
+        'Stock management',
+        'Full-text search',
         'Notifications',
-        'Search',
-        'RabbitMQ Events',
-        'Secure Authentication',
+        'Email system',
+        'Secure authentication',
+        'Admin-ready backend APIs',
       ],
       ar: [
-        'نظام العملاء',
+        'تجربة التسوق للعملاء',
         'لوحة تحكم البراند',
-        'تعاون المودلز',
-        'إدارة المنتجات',
+        'لوحة تحكم المودل',
+        'سير عمل التعاون براند-مودل',
+        'كتالوج المنتجات',
+        'متغيرات المنتجات',
+        'السلة والمفضلة',
+        'الدفع',
+        'التقييمات والتعليقات',
+        'إدارة المخزون',
+        'البحث في النصوص',
         'الإشعارات',
-        'البحث',
-        'RabbitMQ Events',
+        'نظام البريد',
         'تسجيل دخول آمن',
+        'APIs backend جاهزة',
       ],
     },
-    stack: ['Spring Boot', 'React', 'RabbitMQ', 'PostgreSQL', 'Cloudinary', 'Swagger'],
+    stack: ['Spring Boot', 'React', 'RabbitMQ', 'PostgreSQL', 'Cloudinary', 'Swagger', 'JWT Auth', 'Heroku'],
     links: [
-      { label: 'GitHub Link', href: configurableLinks.styleHubGithub },
-      { label: 'Swagger Link', href: configurableLinks.styleHubSwagger },
+      { label: 'GitHub Repository', href: configurableLinks.styleHubGithub },
+      { label: 'Swagger Documentation', href: configurableLinks.styleHubSwagger },
       { label: 'Medium Article', href: configurableLinks.styleHubMedium },
     ],
     screenshots: [
@@ -211,121 +235,254 @@ export const projects: Project[] = [
       { src: brandCollaboration, alt: 'StyleHub model collaboration discovery', label: 'Model Collaboration' },
       { src: modelDashboard, alt: 'StyleHub model dashboard overview', label: 'Model Dashboard' },
       { src: modelAgreement, alt: 'StyleHub agreement submission workspace', label: 'Agreement Workspace' },
-      { src: ecommerceHome, alt: 'StyleHub customer mobile home screen', label: 'Customer Home' },
-      { src: ecommerceProducts, alt: 'StyleHub customer products screen', label: 'Products Screen' },
-      { src: ecommerceShowProduct, alt: 'StyleHub product details mobile screen', label: 'Product Details' },
-      { src: ecommerceCart, alt: 'StyleHub cart mobile screen', label: 'Cart Flow' },
-      { src: ecommerceCheckout, alt: 'StyleHub checkout mobile screen', label: 'Checkout Flow' },
+      { src: ecommerceHome, alt: 'StyleHub customer mobile home screen', label: 'Mobile App - Home' },
+      { src: ecommerceProducts, alt: 'StyleHub customer products screen', label: 'Mobile App - Products' },
+      { src: ecommerceShowProduct, alt: 'StyleHub product details mobile screen', label: 'Mobile App - Details' },
+      { src: ecommerceCart, alt: 'StyleHub cart mobile screen', label: 'Mobile App - Cart' },
+      { src: ecommerceCheckout, alt: 'StyleHub checkout mobile screen', label: 'Mobile App - Checkout' },
     ],
     highlight: {
-      en: 'The star project: a full product ecosystem with dashboards, collaboration, search, events, and business workflows.',
-      ar: 'المشروع الأهم: نظام منتج كامل فيه لوحات تحكم، تعاون، بحث، events، وعمليات أعمال.',
+      en: 'A complete product ecosystem with dashboards for brands and models, customer shopping flows, search, event-driven workflows, and business operations.',
+      ar: 'نظام منتج كامل مع لوحات تحكم للبراندات والمودلز، تجارب تسوق للعملاء، بحث، سير عمل محدث الأحداث، وعمليات أعمال.',
     },
   },
   {
     title: 'El Habashy Auctions',
     subtitle: 'Auction Management Platform',
     icon: PackageCheck,
+    businessCategory: {
+      en: 'Completed Project',
+      ar: 'مشروع مكتمل',
+    },
     description: {
-      en: 'An auction management platform for a real business with listing workflows, categories, uploads, admin tools, and production-ready pages.',
-      ar: 'منصة مزادات لعمل حقيقي تشمل إدارة العروض، التصنيفات، الرفع، أدوات الإدارة، وصفحات جاهزة للنشر.',
+      en: 'El Habashy Auctions is an auction management website built for a real business to showcase active and previous auctions online. The system helps the business publish auction details, organize categories, upload images, and give visitors a clear way to browse auction opportunities.',
+      ar: 'El Habashy Auctions موقع إدارة مزادات مبني لعمل حقيقي لعرض المزادات النشطة والسابقة أونلاين. يساعد النظام العمل على نشر تفاصيل المزادات، تنظيم التصنيفات، رفع الصور، وإعطاء الزوار طريقة واضحة لتصفح فرص المزادات.',
+    },
+    businessValue: {
+      en: 'The platform gives the company a professional online presence, makes it easier for customers to view auctions, understand available categories, and contact the business directly.',
+      ar: 'تعطي المنصة الشركة حضوراً احترافياً أونلاين، تسهل على العملاء مشاهدة المزادات، فهم التصنيفات المتاحة، والتواصل مع العمل مباشرة.',
+    },
+    businessProblems: {
+      en: ['No online presence', 'Manual customer inquiries', 'Hard to showcase auctions', 'Limited category organization'],
+      ar: ['عدم وجود وجود أونلاين', 'استفسارات عملاء يدوية', 'صعوبة عرض المزادات', 'تنظيم تصنيفات محدود'],
     },
     features: {
-      en: ['Auction Management', 'Admin Dashboard', 'Categories', 'Uploads', 'Production Deployment'],
-      ar: ['إدارة المزادات', 'لوحة تحكم', 'تصنيفات', 'رفع ملفات', 'نشر للإنتاج'],
+      en: ['Public website', 'Auction details pages', 'Active auctions listing', 'Previous auctions archive', 'Category filtering', 'Admin dashboard', 'Auction creation and management', 'Image upload', 'Responsive design', 'Production deployment'],
+      ar: ['موقع عام', 'صفحات تفاصيل المزادات', 'قائمة المزادات النشطة', 'أرشيف المزادات السابقة', 'فلترة التصنيفات', 'لوحة تحكم الإدارة', 'إنشاء وإدارة المزادات', 'رفع الصور', 'تصميم متجاوب', 'نشر الإنتاج'],
     },
-    stack: ['Spring Boot', 'MySQL', 'Thymeleaf', 'Bootstrap', 'Cloudinary', 'Heroku'],
+    stack: ['Spring Boot', 'Thymeleaf', 'MySQL', 'Bootstrap', 'Cloudinary', 'Apache Tomcat', 'Ubuntu VPS'],
     links: [
-      { label: 'GitHub Link', href: configurableLinks.elHabashyGithub },
+      { label: 'Live Website', href: 'placeholder' },
+      { label: 'GitHub Repository', href: configurableLinks.elHabashyGithub },
     ],
     screenshots: [
       { src: '/assets/gallery/elhabashy-english-home-14.png', alt: 'El Habashy English landing page', label: 'English Landing' },
       { src: '/assets/gallery/elhabashy-arabic-home-13.png', alt: 'El Habashy Arabic landing page', label: 'Arabic Landing' },
     ],
     highlight: {
-      en: 'Built around real business workflows and configured for a practical production release.',
-      ar: 'مبني حول احتياجات عمل حقيقي ومجهز لإطلاق عملي.',
+      en: 'Built around real business workflows and configured for practical production deployment with a professional, user-friendly interface.',
+      ar: 'مبني حول سير عمل أعمال حقيقي ومجهز لنشر إنتاج عملي مع واجهة احترافية وودية للمستخدم.',
     },
   },
   {
-    title: 'Business Dashboard Kit',
-    subtitle: 'Operations Dashboard Placeholder',
-    icon: BarChart3,
-    description: {
-      en: 'A configurable placeholder for future dashboards with analytics, tables, filters, and operational workflows.',
-      ar: 'مكان قابل للتعديل لمشاريع داشبورد قادمة فيها تحليلات وجداول وفلاتر وسير عمل.',
-    },
-    features: {
-      en: ['Analytics', 'Reports', 'Tables', 'Filters'],
-      ar: ['تحليلات', 'تقارير', 'جداول', 'فلاتر'],
-    },
-    stack: ['React', 'Tailwind CSS', 'Charts', 'REST APIs'],
-    highlight: {
-      en: 'Use this slot for your next dashboard case study.',
-      ar: 'استخدم هذا المكان لدراسة حالة الداشبورد القادمة.',
-    },
-  },
-  {
-    title: 'MVP Launch System',
-    subtitle: 'Idea to Product Placeholder',
-    icon: Rocket,
-    description: {
-      en: 'A placeholder for fast MVP work: landing page, core workflow, dashboard, contact flow, and deployment.',
-      ar: 'مكان لمشاريع MVP سريعة: صفحة تعريف، workflow أساسي، dashboard، تواصل، ونشر.',
-    },
-    features: {
-      en: ['Landing Page', 'Core Workflow', 'Dashboard', 'Deployment'],
-      ar: ['Landing Page', 'سير عمل أساسي', 'لوحة تحكم', 'نشر'],
-    },
-    stack: ['React', 'Spring Boot', 'Cloudinary', 'Heroku'],
-    highlight: {
-      en: 'Designed to be replaced with a real client MVP later.',
-      ar: 'مصمم ليتم استبداله بمشروع MVP حقيقي لاحقًا.',
-    },
-  },
-  {
-    title: 'Modern Brand Website',
-    subtitle: 'Business Website Placeholder',
+    title: 'More Projects Coming Soon',
+    subtitle: 'Additional Work in Progress',
     icon: Sparkles,
+    businessCategory: {
+      en: 'Coming Soon',
+      ar: 'قريباً',
+    },
     description: {
-      en: 'A placeholder for a clean modern website built for a business, service, or personal brand.',
-      ar: 'مكان لموقع حديث ونظيف لبيزنس أو خدمة أو personal brand.',
+      en: 'More projects are currently being prepared and will be added to this portfolio soon. Each new project will showcase a different business challenge and how I solved it with clean engineering and product thinking.',
+      ar: 'مشاريع إضافية قيد التحضير وسيتم إضافتها إلى هذه المحفظة قريباً. كل مشروع جديد سيعرض تحدياً عملياً مختلفاً وكيف حللته بهندسة نظيفة وتفكير منتج-محور.',
+    },
+    businessValue: {
+      en: 'Stay tuned for case studies on landing pages, dashboards, backend systems, and full-product launches.',
+      ar: 'ابقى متابعاً لدراسات حالة على صفحات تعريف، لوحات تحكم، أنظمة backend، وإطلاقات منتجات كاملة.',
+    },
+    businessProblems: {
+      en: [],
+      ar: [],
     },
     features: {
-      en: ['Responsive UI', 'Premium Sections', 'Contact Flow', 'SEO Basics'],
-      ar: ['واجهة متجاوبة', 'أقسام premium', 'تواصل', 'أساسيات SEO'],
+      en: ['More case studies coming'],
+      ar: ['المزيد من دراسات الحالة قادمة'],
     },
-    stack: ['React', 'Tailwind CSS', 'Framer Motion'],
+    stack: [],
+    links: [],
+    screenshots: [],
     highlight: {
-      en: 'Ready for screenshots, live links, and a case study.',
-      ar: 'جاهز لإضافة الصور والروابط ودراسة الحالة.',
+      en: 'Check back soon for new project showcases.',
+      ar: 'تحقق لاحقاً من معارض المشاريع الجديدة.',
     },
   },
 ]
 
 export const stats: Stat[] = [
-  { value: 5, suffix: '+', label: { en: 'Projects', ar: 'مشاريع' } },
-  { value: 5, suffix: '+', label: { en: 'Satisfied Clients', ar: 'عملاء راضون' } },
+  { value: 5, suffix: '+', label: { en: 'Total Projects', ar: 'إجمالي المشاريع' } },
+  { value: 5, suffix: '+', label: { en: 'Satisfied Customers', ar: 'عملاء راضون' } },
   { value: 100, suffix: '+', label: { en: 'Features Delivered', ar: 'ميزة تم تنفيذها' } },
+  { value: 2, suffix: '+', label: { en: 'Real Business Projects', ar: 'مشاريع أعمال حقيقية' } },
 ]
 
 export const services: ServiceCard[] = [
-  { icon: Palette, title: 'UI / UX Design', text: 'Design clean modern interfaces before development.' },
-  { icon: Rocket, title: 'MVP Development', text: 'Transform ideas into working products quickly.' },
-  { icon: Server, title: 'Backend Development', text: 'Build scalable APIs and business logic.' },
-  { icon: Code2, title: 'Frontend Development', text: 'Responsive and modern web applications.' },
-  { icon: CloudUpload, title: 'Deployment', text: 'Deploy applications to production servers.' },
-  { icon: Lightbulb, title: 'Business Building', text: 'Help turn business ideas into real digital products.' },
+  {
+    icon: Rocket,
+    title: { en: 'Landing Page', ar: 'صفحة تعريف' },
+    description: {
+      en: 'A modern landing page for your business, product, service, or campaign with clean design, responsive layout, animations, and clear call-to-action sections.',
+      ar: 'صفحة تعريف حديثة لعملك أو منتجك أو خدمتك أو حملتك بتصميم نظيف، تصميم متجاوب، رسوم متحركة، وأقسام call-to-action واضحة.',
+    },
+    deliverables: {
+      en: ['Hero section', 'About section', 'Services section', 'Contact section', 'Responsive design', 'Smooth animations'],
+      ar: ['قسم بطل', 'قسم من نحن', 'قسم الخدمات', 'قسم التواصل', 'تصميم متجاوب', 'رسوم متحركة سلسة'],
+    },
+  },
+  {
+    icon: Palette,
+    title: { en: 'UI / UX Design', ar: 'تصميم الواجهة والتجربة' },
+    description: {
+      en: 'Clean and modern interface design that makes your product easier to understand and more attractive to users.',
+      ar: 'تصميم واجهة نظيف وحديث يجعل منتجك أسهل في الفهم وأكثر جاذبية للمستخدمين.',
+    },
+    deliverables: {
+      en: ['User-friendly layout', 'Clean sections', 'Modern components', 'Better visual hierarchy', 'Business-focused design'],
+      ar: ['تخطيط ودود للمستخدم', 'أقسام نظيفة', 'مكونات حديثة', 'تسلسل بصري أفضل', 'تصميم محور-الأعمال'],
+    },
+  },
+  {
+    icon: Code2,
+    title: { en: 'Frontend MVP', ar: 'Frontend MVP' },
+    description: {
+      en: 'A working frontend version of your product idea so you can present it, test it, or show it to potential customers.',
+      ar: 'نسخة frontend تعمل من فكرة منتجك حتى تتمكن من عرضها واختبارها وإظهارها للعملاء المحتملين.',
+    },
+    deliverables: {
+      en: ['Responsive frontend', 'Pages and components', 'Dashboard UI', 'Forms', 'API-ready structure'],
+      ar: ['frontend متجاوب', 'صفحات ومكونات', 'واجهة لوحة تحكم', 'نماذج', 'بنية جاهزة للـ API'],
+    },
+  },
+  {
+    icon: Server,
+    title: { en: 'Backend Development', ar: 'تطوير الخادم' },
+    description: {
+      en: 'A secure and scalable backend system that handles your business logic, data, users, APIs, and integrations.',
+      ar: 'نظام خادم آمن وقابل للتوسع يتعامل مع منطق عملك والبيانات والمستخدمين والـ APIs والتكاملات.',
+    },
+    deliverables: {
+      en: ['REST APIs', 'Authentication', 'Database design', 'Business logic', 'Security', 'API documentation'],
+      ar: ['REST APIs', 'المصادقة', 'تصميم قاعدة البيانات', 'منطق الأعمال', 'الأمان', 'توثيق API'],
+    },
+  },
+  {
+    icon: Workflow,
+    title: { en: 'Full Product Development', ar: 'تطوير المنتج الكامل' },
+    description: {
+      en: 'From idea to launch. I can help turn your business idea into a real working product.',
+      ar: 'من الفكرة إلى الإطلاق. أستطيع مساعدتك في تحويل فكرة عملك إلى منتج حقيقي يعمل.',
+    },
+    deliverables: {
+      en: [
+        'Understand the idea',
+        'Plan the features',
+        'Design the UI',
+        'Build the frontend',
+        'Build the backend',
+        'Connect everything',
+        'Test the product',
+        'Deploy it online',
+      ],
+      ar: [
+        'فهم الفكرة',
+        'تخطيط الميزات',
+        'تصميم الواجهة',
+        'بناء الـ Frontend',
+        'بناء الـ Backend',
+        'ربط كل شيء',
+        'اختبار المنتج',
+        'نشره أونلاين',
+      ],
+    },
+  },
+  {
+    icon: CloudUpload,
+    title: { en: 'Deployment & Hosting', ar: 'النشر والاستضافة' },
+    description: {
+      en: 'Deploy your website or application online and prepare it for real users.',
+      ar: 'انشر موقعك أو تطبيقك أونلاين وحضره للمستخدمين الحقيقيين.',
+    },
+    deliverables: {
+      en: ['VPS setup', 'Domain connection', 'Server configuration', 'Database setup', 'Production deployment'],
+      ar: ['إعداد VPS', 'ربط النطاق', 'إعدادات الخادم', 'إعداد قاعدة البيانات', 'نشر الإنتاج'],
+    },
+  },
 ]
 
 export const processSteps: ProcessStep[] = [
-  { icon: Lightbulb, title: 'Idea & Planning', text: 'Clarify the goal, users, business flow, and first version scope.' },
-  { icon: Brush, title: 'UI / UX Design', text: 'Shape a polished interface and user journey before coding.' },
-  { icon: Rocket, title: 'MVP Development', text: 'Build the smallest useful product with the right foundations.' },
-  { icon: Workflow, title: 'Backend & Frontend Integration', text: 'Connect APIs, screens, auth, data, and business rules.' },
-  { icon: CheckCircle2, title: 'Testing', text: 'Validate flows, edge cases, responsive layouts, and reliability.' },
-  { icon: CloudUpload, title: 'Deployment', text: 'Launch the product with a clean production setup.' },
-  { icon: Gauge, title: 'Growth & Improvements', text: 'Improve based on usage, feedback, and new product needs.' },
+  {
+    icon: MessageCircle,
+    title: { en: 'Discovery Call', ar: 'جلسة الاكتشاف' },
+    description: {
+      en: 'We discuss your idea, business goals, users, and the main problem you want to solve.',
+      ar: 'نناقش فكرتك والأهداف الأعمال والمستخدمين والمشكلة الرئيسية التي تريد حلها.',
+    },
+  },
+  {
+    icon: Lightbulb,
+    title: { en: 'Feature Planning', ar: 'تخطيط الميزات' },
+    description: {
+      en: 'We define the important features for the first version and decide what should be included in the MVP.',
+      ar: 'نحدد الميزات المهمة للنسخة الأولى ونقرر ما يجب أن يتضمنه MVP.',
+    },
+  },
+  {
+    icon: Brush,
+    title: { en: 'UI / UX Design', ar: 'تصميم الواجهة والتجربة' },
+    description: {
+      en: 'I create a clean user-friendly design so the product is easy to use and visually attractive.',
+      ar: 'أنشئ تصميماً نظيفاً ودوداً للمستخدم حتى يكون المنتج سهل الاستخدام وجذاباً بصرياً.',
+    },
+  },
+  {
+    icon: Code2,
+    title: { en: 'Frontend Development', ar: 'تطوير الواجهة الأمامية' },
+    description: {
+      en: 'I build the frontend pages, dashboards, forms, and user flows.',
+      ar: 'أبني صفحات الـ Frontend ولوحات التحكم والنماذج وسير العمل للمستخدم.',
+    },
+  },
+  {
+    icon: Server,
+    title: { en: 'Backend Development', ar: 'تطوير الخادم' },
+    description: {
+      en: 'I build the APIs, authentication, database, business logic, and integrations.',
+      ar: 'أبني الـ APIs والمصادقة وقاعدة البيانات ومنطق الأعمال والتكاملات.',
+    },
+  },
+  {
+    icon: CheckCircle2,
+    title: { en: 'Testing & Improvements', ar: 'الاختبار والتحسينات' },
+    description: {
+      en: 'I test the main flows, fix issues, improve performance, and make the experience smoother.',
+      ar: 'أختبر الـ flows الرئيسية، أصلح المشاكل، أحسّن الأداء، وأجعل التجربة أسلس.',
+    },
+  },
+  {
+    icon: CloudUpload,
+    title: { en: 'Deployment', ar: 'النشر' },
+    description: {
+      en: 'The project is deployed online with domain, server, database, and production setup.',
+      ar: 'ينشر المشروع أونلاين مع النطاق والخادم وقاعدة البيانات وإعدادات الإنتاج.',
+    },
+  },
+  {
+    icon: Gauge,
+    title: { en: 'Support & Growth', ar: 'الدعم والنمو' },
+    description: {
+      en: 'After launch, we can improve the product, add new features, and grow it based on user feedback.',
+      ar: 'بعد الإطلاق، نستطيع تحسين المنتج وإضافة ميزات جديدة ونموه بناءً على ملاحظات المستخدمين.',
+    },
+  },
 ]
 
 export const whyCards: WhyCard[] = [
@@ -338,10 +495,10 @@ export const whyCards: WhyCard[] = [
 ]
 
 export const contactItems: ContactItem[] = [
-  { icon: Phone, label: 'Phone', value: '01222199183', href: configurableLinks.phone },
-  { icon: Mail, label: 'Email', value: 'mostafa.mahmoudegy10@gmail.com', href: configurableLinks.email },
-  { icon: HeartHandshake, label: 'LinkedIn', value: 'Placeholder', href: configurableLinks.linkedin },
-  { icon: ArrowUpRight, label: 'GitHub', value: 'Placeholder', href: configurableLinks.github },
+  { icon: Phone, label: { en: 'Call Me', ar: 'اتصل بي' }, value: '01222199183', href: configurableLinks.phone },
+  { icon: Mail, label: { en: 'Send Email', ar: 'أرسل بريد' }, value: 'mostafa.mahmoudegy10@gmail.com', href: configurableLinks.email },
+  { icon: Code2, label: { en: 'View GitHub', ar: 'اعرض جيت هاب' }, value: 'GitHub', href: configurableLinks.github },
+  { icon: HeartHandshake, label: { en: 'LinkedIn', ar: 'لينكدإن' }, value: 'LinkedIn', href: configurableLinks.linkedin },
 ]
 
 export const techRows = [

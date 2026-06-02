@@ -34,9 +34,9 @@ export function ProjectCard({ project, lang, index, onOpen }: ProjectCardProps) 
           ) : (
             <ProjectDiagram icon={Icon} />
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/28 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-white/95 via-white/28 to-transparent" />
           <motion.div
-            className="absolute inset-x-8 bottom-7 h-px origin-left bg-gradient-to-r from-bluewave via-orangecore to-transparent"
+            className="absolute inset-x-8 bottom-7 h-px origin-left bg-linear-to-r from-bluewave via-orangecore to-transparent"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -95,16 +95,19 @@ export function ProjectCard({ project, lang, index, onOpen }: ProjectCardProps) 
 
           {project.links?.length ? (
             <div className="mt-6 flex flex-wrap gap-2">
-              {project.links.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="inline-flex items-center gap-2 rounded-lg border border-orange-200 bg-orange-50 px-3 py-2 text-xs font-bold text-orange-700 transition hover:bg-orange-100"
-                >
-                  {link.label}
-                  <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
-              ))}
+              {project.links.map((link) => {
+                const linkLabel = typeof link.label === 'string' ? link.label : link.label[lang]
+                return (
+                  <a
+                    key={linkLabel}
+                    href={link.href}
+                    className="inline-flex items-center gap-2 rounded-lg border border-orange-200 bg-orange-50 px-3 py-2 text-xs font-bold text-orange-700 transition hover:bg-orange-100"
+                  >
+                    {linkLabel}
+                    <ArrowUpRight className="h-3.5 w-3.5" />
+                  </a>
+                )
+              })}
             </div>
           ) : null}
         </div>

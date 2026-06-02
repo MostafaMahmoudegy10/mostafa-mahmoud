@@ -10,11 +10,14 @@ export function Process({ lang }: { lang: Lang }) {
   return (
     <Section id="process" eyebrow={t.process.eyebrow} title={t.process.title}>
       <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-100px' }} className="relative grid gap-4">
-        <div className="absolute left-6 top-6 hidden h-[calc(100%-48px)] w-px bg-gradient-to-b from-bluewave via-orangecore to-transparent md:block rtl:left-auto rtl:right-6" />
+        <div className="absolute left-6 top-6 hidden h-[calc(100%-48px)] w-px bg-linear-to-b from-bluewave via-orangecore to-transparent md:block rtl:left-auto rtl:right-6" />
         {processSteps.map((step, index) => {
           const Icon = step.icon
+          const stepTitle = typeof step.title === 'string' ? step.title : step.title[lang]
+          const stepDesc = typeof (step.description || step.text) === 'string' ? (step.description || step.text) : (step.description || step.text)?.[lang]
+
           return (
-            <motion.article key={step.title} variants={fadeUp} className="grid gap-4 md:grid-cols-[80px_1fr]">
+            <motion.article key={stepTitle} variants={fadeUp} className="grid gap-4 md:grid-cols-[80px_1fr]">
               <div className="relative hidden md:block">
                 <motion.div
                   whileHover={{ scale: 1.05, rotate: 2 }}
@@ -27,13 +30,13 @@ export function Process({ lang }: { lang: Lang }) {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <p className="text-sm font-bold text-blue-600">Step {index + 1}</p>
-                    <h3 className="mt-1 text-xl font-black text-slate-950">{step.title}</h3>
+                    <h3 className="mt-1 text-xl font-black text-slate-950">{stepTitle}</h3>
                   </div>
                   <div className="grid h-10 w-10 place-items-center rounded-lg bg-orange-50 text-orange-500 md:hidden">
                     <Icon className="h-5 w-5" />
                   </div>
                 </div>
-                <p className="mt-3 text-sm leading-7 text-muted">{step.text}</p>
+                {stepDesc && <p className="mt-3 text-sm leading-7 text-muted">{stepDesc}</p>}
               </motion.div>
             </motion.article>
           )
@@ -42,3 +45,4 @@ export function Process({ lang }: { lang: Lang }) {
     </Section>
   )
 }
+
