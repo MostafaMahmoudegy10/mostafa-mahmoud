@@ -31,6 +31,7 @@ export type ProjectScreenshot = {
   src: string
   alt: string
   label: string
+  orientation?: 'desktop' | 'mobile'
 }
 
 export type SkillGroup = {
@@ -68,7 +69,9 @@ export type ServiceCard = {
   icon: LucideIcon
   title: LocalizedText | string
   description?: LocalizedText | string
+  examples?: Record<Lang, string[]>
   deliverables?: Record<Lang, string[]>
+  features?: Record<Lang, string[]>
   text?: string
 }
 
@@ -82,6 +85,7 @@ export type ProcessStep = {
   icon: LucideIcon
   title: LocalizedText | string
   description?: LocalizedText | string
+  deliverables?: Record<Lang, string[]>
   text?: string
 }
 
@@ -91,4 +95,3 @@ export type ContactItem = {
   value: string
   href: string
 }
-

@@ -23,11 +23,19 @@ import brandCategories from '../assets/brand-dashboard/category-builder-and-expl
 import brandDashboard from '../assets/brand-dashboard/dashboard-performance-overview.png'
 import brandCollaboration from '../assets/brand-dashboard/model-collaboration-discovery.png'
 import brandProducts from '../assets/brand-dashboard/product-catalog-management.png'
+import ecommerceAddCard from '../assets/Ecommerce/Add card Screen.png'
 import ecommerceCart from '../assets/Ecommerce/cart screen.png'
 import ecommerceCheckout from '../assets/Ecommerce/checkout screen 1.png'
+import ecommerceCheckoutTwo from '../assets/Ecommerce/checkout screen 2.png'
+import ecommerceCheckoutThree from '../assets/Ecommerce/checkout screen 3.png'
+import ecommerceFavourite from '../assets/Ecommerce/favourite screen.png'
+import ecommerceFilter from '../assets/Ecommerce/Filter on Product screen.png'
 import ecommerceHome from '../assets/Ecommerce/Home screen.png'
 import ecommerceProducts from '../assets/Ecommerce/Products screen.png'
+import ecommerceProfile from '../assets/Ecommerce/Profile screen.png'
 import ecommerceShowProduct from '../assets/Ecommerce/Show product screen.png'
+import ecommerceTrackOrderOne from '../assets/Ecommerce/Track order Screen 1.png'
+import ecommerceTrackOrderTwo from '../assets/Ecommerce/Track order screen 2.png'
 import modelAgreement from '../assets/model-dashboard/agreement-submission-workspace.png'
 import modelDashboard from '../assets/model-dashboard/dashboard-overview.png'
 import type { ContactItem, ProcessStep, Project, ServiceCard, Stat, WhyCard } from '../types'
@@ -40,6 +48,9 @@ export const configurableLinks = {
   styleHubGithub: 'https://github.com/MostafaMahmoudegy10/e-commerce',
   styleHubSwagger: 'https://ecommerce-app-e6303c36e118.herokuapp.com/swagger-ui/index.html',
   styleHubMedium: 'https://medium.com/@mostafa.mahmoudegy10/building-stylehub-lessons-from-developing-an-ai-driven-fashion-social-commerce-platform-0c6014f728ee',
+  styleHubBrandDashboardPreview: '/assets/gallery/stylehub-brand-dashboard-01.png',
+  styleHubModelDashboardPreview: '/assets/gallery/stylehub-model-dashboard-07.png',
+  elHabashyLive: 'https://el-habashy-yl93.vercel.app/',
   elHabashyGithub: 'https://github.com/MostafaMahmoudegy10/el-habashy',
 }
 
@@ -59,32 +70,32 @@ export const copy = {
     },
     projects: {
       eyebrow: 'Featured Projects',
-      title: 'Real projects I\'ve built for businesses. Each project solves real business problems.',
-      preview: 'Explore project',
+      title: 'Real products built to solve business problems.',
+      preview: 'View details',
       close: 'Close',
-      features: 'Inside the project',
-      stack: 'Stack',
-      highlight: 'Project note',
+      features: 'What it includes',
+      stack: 'Built With',
+      highlight: 'Result',
       links: 'Project Links',
       screenshots: 'Project Gallery',
       featured: 'Featured Project',
       placeholder: 'Ready for your next screenshots and links',
     },
     stats: {
-      eyebrow: 'What I\'ve Built',
-      title: 'Real projects, real impact.',
+      eyebrow: 'Results',
+      title: 'What I\'ve Built',
     },
     services: {
-      eyebrow: 'What I Can Build For Your Business',
-      title: 'Services designed for business outcomes, not just code.',
+      eyebrow: 'Business Services',
+      title: 'What Can I Build For Your Business',
     },
     process: {
-      eyebrow: 'How We Build Your Product',
-      title: 'A proven process from idea to growth.',
+      eyebrow: 'Product Process',
+      title: 'How We Build Your Product',
     },
     why: {
-      eyebrow: 'Why Clients Choose To Work With Me',
-      title: 'I deliver business value, not just features.',
+      eyebrow: 'Client Fit',
+      title: 'Why Clients Choose To Work With Me',
     },
     contact: {
       eyebrow: 'Contact',
@@ -115,32 +126,32 @@ export const copy = {
     },
     projects: {
       eyebrow: 'المشاريع المميزة',
-      title: 'مشاريع حقيقية بنيتها لعملاء في الأعمال. كل مشروع يحل مشاكل أعمال حقيقية.',
-      preview: 'عرض المشروع',
+      title: 'منتجات حقيقية مبنية لحل مشاكل أعمال.',
+      preview: 'عرض التفاصيل',
       close: 'إغلاق',
-      features: 'داخل المشروع',
-      stack: 'التقنيات',
-      highlight: 'ملاحظة المشروع',
+      features: 'ماذا يشمل',
+      stack: 'تم بناؤه باستخدام',
+      highlight: 'النتيجة',
       links: 'روابط المشروع',
       screenshots: 'معرض المشروع',
       featured: 'المشروع الأهم',
       placeholder: 'جاهز لإضافة الصور والروابط لاحقًا',
     },
     stats: {
-      eyebrow: 'ما الذي بنيته',
-      title: 'مشاريع حقيقية، تأثير حقيقي.',
+      eyebrow: 'النتائج',
+      title: 'ما الذي بنيته',
     },
     services: {
-      eyebrow: 'ما الذي أستطيع بناءه لعملك',
-      title: 'خدمات مصممة للنتائج الأعمالية، وليس فقط الكود.',
+      eyebrow: 'خدمات للأعمال',
+      title: 'ما الذي أستطيع بناءه لعملك',
     },
     process: {
-      eyebrow: 'كيف نبني منتجك',
-      title: 'عملية مثبتة من الفكرة إلى النمو.',
+      eyebrow: 'طريقة بناء المنتج',
+      title: 'كيف نبني منتجك',
     },
     why: {
-      eyebrow: 'لماذا يختار العملاء العمل معي',
-      title: 'أقدم قيمة أعمالية، وليس فقط ميزات.',
+      eyebrow: 'لماذا أنا',
+      title: 'لماذا يختار العملاء العمل معي',
     },
     contact: {
       eyebrow: 'تواصل',
@@ -171,76 +182,88 @@ export const projects: Project[] = [
       ar: 'مشروع مكتمل',
     },
     description: {
-      en: 'StyleHub is a fashion social-commerce and multi-vendor e-commerce platform that connects customers, fashion brands, and models in one ecosystem. The platform allows customers to discover and buy products, brands to manage their stores and orders, and models to collaborate with brands on fashion campaigns.',
-      ar: 'StyleHub منصة fashion social-commerce وتجارة إلكترونية متعددة البائعين تربط العملاء والبراندات والمودلز في نظام واحد. تسمح المنصة للعملاء باكتشاف المنتجات والشراء، والبراندات بإدارة متاجرهم وطلباتهم، والمودلز بالتعاون مع البراندات على حملات أزياء.',
+      en: 'StyleHub is a complete fashion commerce product. Customers shop through a mobile app, brands manage products and orders from a dashboard, and models manage collaboration requests from their own workspace.',
+      ar: 'StyleHub منتج تجارة أزياء متكامل. العملاء يتسوقون من تطبيق موبايل، البراندات تدير المنتجات والطلبات من لوحة تحكم، والمودلز يديرون طلبات التعاون من مساحة عمل خاصة بهم.',
     },
     businessValue: {
-      en: 'StyleHub helps fashion businesses sell online, manage products, collaborate with models, track orders, and create a smoother shopping experience for customers.',
-      ar: 'تساعد StyleHub عمليات أزياء تبيع أونلاين، إدارة المنتجات، التعاون مع المودلز، تتبع الطلبات، وخلق تجربة شراء أفضل للعملاء.',
+      en: 'It gives a fashion business one connected system for selling products, tracking orders, managing catalogs, and running brand-model collaborations.',
+      ar: 'يعطي بزنس الأزياء نظاما واحدا مترابطا للبيع أونلاين، تتبع الطلبات، إدارة الكتالوج، وتنظيم التعاون بين البراندات والمودلز.',
     },
     businessProblems: {
-      en: ['Limited online presence', 'Manual order management', 'No brand-model collaboration tools', 'Fragmented customer experience'],
-      ar: ['حضور أونلاين محدود', 'إدارة طلبات يدوية', 'عدم وجود أدوات تعاون براند-مودل', 'تجربة عملاء غير منسقة'],
+      en: [
+        'Customers need a smooth way to browse, buy, and track orders',
+        'Brands need one place to manage products, categories, and orders',
+        'Models need a clear workspace for requests, agreements, and reviews',
+        'The business needs all sides connected in one product',
+      ],
+      ar: [
+        'العميل يحتاج طريقة سهلة للتصفح والشراء وتتبع الطلب',
+        'البراند يحتاج مكانا واحدا لإدارة المنتجات والتصنيفات والطلبات',
+        'الموديل يحتاج مساحة واضحة للطلبات والاتفاقات والتقييمات',
+        'البزنس يحتاج كل الأطراف متصلة في منتج واحد',
+      ],
     },
     features: {
       en: [
-        'Customer shopping experience',
+        'Mobile shopping app',
         'Brand dashboard',
         'Model dashboard',
-        'Brand/model collaboration workflow',
-        'Product catalog',
-        'Product variants',
-        'Cart & Wishlist',
-        'Checkout',
+        'Product catalog management',
+        'Order management',
+        'Brand-model collaboration',
+        'Cart, wishlist & checkout',
+        'Order tracking',
         'Ratings and reviews',
-        'Stock management',
-        'Full-text search',
+        'Search and filters',
         'Notifications',
-        'Email system',
-        'Secure authentication',
-        'Admin-ready backend APIs',
       ],
       ar: [
-        'تجربة التسوق للعملاء',
+        'تطبيق تسوق موبايل',
         'لوحة تحكم البراند',
         'لوحة تحكم المودل',
-        'سير عمل التعاون براند-مودل',
-        'كتالوج المنتجات',
-        'متغيرات المنتجات',
-        'السلة والمفضلة',
-        'الدفع',
+        'إدارة كتالوج المنتجات',
+        'إدارة الطلبات',
+        'تعاون البراند والموديل',
+        'السلة والمفضلة والدفع',
+        'تتبع الطلبات',
         'التقييمات والتعليقات',
-        'إدارة المخزون',
-        'البحث في النصوص',
+        'البحث والفلترة',
         'الإشعارات',
-        'نظام البريد',
-        'تسجيل دخول آمن',
-        'APIs backend جاهزة',
       ],
     },
     stack: ['Spring Boot', 'React', 'RabbitMQ', 'PostgreSQL', 'Cloudinary', 'Swagger', 'JWT Auth', 'Heroku'],
     links: [
+      { label: 'Brand Dashboard Preview', href: configurableLinks.styleHubBrandDashboardPreview },
+      { label: 'Model Dashboard Preview', href: configurableLinks.styleHubModelDashboardPreview },
       { label: 'GitHub Repository', href: configurableLinks.styleHubGithub },
       { label: 'Swagger Documentation', href: configurableLinks.styleHubSwagger },
       { label: 'Medium Article', href: configurableLinks.styleHubMedium },
     ],
     screenshots: [
-      { src: brandDashboard, alt: 'StyleHub brand dashboard performance overview', label: 'Brand Dashboard' },
-      { src: brandProducts, alt: 'StyleHub product catalog management', label: 'Product Management' },
-      { src: brandCategories, alt: 'StyleHub category builder and explorer', label: 'Category Builder' },
-      { src: brandAddProduct, alt: 'StyleHub add product form', label: 'Add Product Flow' },
-      { src: brandCollaboration, alt: 'StyleHub model collaboration discovery', label: 'Model Collaboration' },
-      { src: modelDashboard, alt: 'StyleHub model dashboard overview', label: 'Model Dashboard' },
-      { src: modelAgreement, alt: 'StyleHub agreement submission workspace', label: 'Agreement Workspace' },
-      { src: ecommerceHome, alt: 'StyleHub customer mobile home screen', label: 'Mobile App - Home' },
-      { src: ecommerceProducts, alt: 'StyleHub customer products screen', label: 'Mobile App - Products' },
-      { src: ecommerceShowProduct, alt: 'StyleHub product details mobile screen', label: 'Mobile App - Details' },
-      { src: ecommerceCart, alt: 'StyleHub cart mobile screen', label: 'Mobile App - Cart' },
-      { src: ecommerceCheckout, alt: 'StyleHub checkout mobile screen', label: 'Mobile App - Checkout' },
+      { src: brandDashboard, alt: 'StyleHub brand dashboard performance overview', label: 'Brand Dashboard', orientation: 'desktop' },
+      { src: brandProducts, alt: 'StyleHub product catalog management', label: 'Product Management', orientation: 'desktop' },
+      { src: brandCategories, alt: 'StyleHub category builder and explorer', label: 'Category Builder', orientation: 'desktop' },
+      { src: brandAddProduct, alt: 'StyleHub add product form', label: 'Add Product Flow', orientation: 'desktop' },
+      { src: brandCollaboration, alt: 'StyleHub model collaboration discovery', label: 'Model Collaboration', orientation: 'desktop' },
+      { src: modelDashboard, alt: 'StyleHub model dashboard overview', label: 'Model Dashboard', orientation: 'desktop' },
+      { src: modelAgreement, alt: 'StyleHub agreement submission workspace', label: 'Agreement Workspace', orientation: 'desktop' },
+      { src: ecommerceHome, alt: 'StyleHub customer mobile home screen', label: 'Mobile App - Home', orientation: 'mobile' },
+      { src: ecommerceProducts, alt: 'StyleHub customer products screen', label: 'Mobile App - Products', orientation: 'mobile' },
+      { src: ecommerceFilter, alt: 'StyleHub mobile product filtering screen', label: 'Mobile App - Filters', orientation: 'mobile' },
+      { src: ecommerceShowProduct, alt: 'StyleHub product details mobile screen', label: 'Mobile App - Details', orientation: 'mobile' },
+      { src: ecommerceFavourite, alt: 'StyleHub customer favourites mobile screen', label: 'Mobile App - Favourites', orientation: 'mobile' },
+      { src: ecommerceCart, alt: 'StyleHub cart mobile screen', label: 'Mobile App - Cart', orientation: 'mobile' },
+      { src: ecommerceCheckout, alt: 'StyleHub checkout address mobile screen', label: 'Mobile App - Checkout 1', orientation: 'mobile' },
+      { src: ecommerceCheckoutTwo, alt: 'StyleHub checkout payment mobile screen', label: 'Mobile App - Checkout 2', orientation: 'mobile' },
+      { src: ecommerceCheckoutThree, alt: 'StyleHub checkout confirmation mobile screen', label: 'Mobile App - Checkout 3', orientation: 'mobile' },
+      { src: ecommerceAddCard, alt: 'StyleHub add payment card mobile screen', label: 'Mobile App - Add Card', orientation: 'mobile' },
+      { src: ecommerceTrackOrderOne, alt: 'StyleHub track order mobile screen', label: 'Mobile App - Track Order 1', orientation: 'mobile' },
+      { src: ecommerceTrackOrderTwo, alt: 'StyleHub track order details mobile screen', label: 'Mobile App - Track Order 2', orientation: 'mobile' },
+      { src: ecommerceProfile, alt: 'StyleHub profile mobile screen', label: 'Mobile App - Profile', orientation: 'mobile' },
     ],
     highlight: {
-      en: 'A complete product ecosystem with dashboards for brands and models, customer shopping flows, search, event-driven workflows, and business operations.',
-      ar: 'نظام منتج كامل مع لوحات تحكم للبراندات والمودلز، تجارب تسوق للعملاء، بحث، سير عمل محدث الأحداث، وعمليات أعمال.',
+      en: 'The project shows the full product journey: mobile shopping for customers, business dashboards for brands, and collaboration tools for models.',
+      ar: 'المشروع يوضح رحلة منتج كاملة: تسوق موبايل للعملاء، لوحات تحكم للبراندات، وأدوات تعاون للمودلز.',
     },
   },
   {
@@ -252,12 +275,12 @@ export const projects: Project[] = [
       ar: 'مشروع مكتمل',
     },
     description: {
-      en: 'El Habashy Auctions is an auction management website built for a real business to showcase active and previous auctions online. The system helps the business publish auction details, organize categories, upload images, and give visitors a clear way to browse auction opportunities.',
-      ar: 'El Habashy Auctions موقع إدارة مزادات مبني لعمل حقيقي لعرض المزادات النشطة والسابقة أونلاين. يساعد النظام العمل على نشر تفاصيل المزادات، تنظيم التصنيفات، رفع الصور، وإعطاء الزوار طريقة واضحة لتصفح فرص المزادات.',
+      en: 'El Habashy Auctions is a business website for publishing current and past auctions. Visitors can browse auctions clearly, and the business can manage auction content, categories, and images from an admin dashboard.',
+      ar: 'El Habashy Auctions موقع أعمال لعرض المزادات الحالية والسابقة. الزوار يقدرون يتصفحون المزادات بوضوح، والبزنس يقدر يدير محتوى المزادات والتصنيفات والصور من لوحة تحكم.',
     },
     businessValue: {
-      en: 'The platform gives the company a professional online presence, makes it easier for customers to view auctions, understand available categories, and contact the business directly.',
-      ar: 'تعطي المنصة الشركة حضوراً احترافياً أونلاين، تسهل على العملاء مشاهدة المزادات، فهم التصنيفات المتاحة، والتواصل مع العمل مباشرة.',
+      en: 'The platform gives the company a professional online presence and makes it easier for customers to understand available auctions and contact the business.',
+      ar: 'تعطي المنصة الشركة حضورا احترافيا أونلاين وتسهل على العملاء فهم المزادات المتاحة والتواصل مع البزنس.',
     },
     businessProblems: {
       en: ['No online presence', 'Manual customer inquiries', 'Hard to showcase auctions', 'Limited category organization'],
@@ -269,7 +292,7 @@ export const projects: Project[] = [
     },
     stack: ['Spring Boot', 'Thymeleaf', 'MySQL', 'Bootstrap', 'Cloudinary', 'Apache Tomcat', 'Ubuntu VPS'],
     links: [
-      { label: 'Live Website', href: 'placeholder' },
+      { label: 'Live Website', href: configurableLinks.elHabashyLive },
       { label: 'GitHub Repository', href: configurableLinks.elHabashyGithub },
     ],
     screenshots: [
@@ -328,21 +351,21 @@ export const services: ServiceCard[] = [
     title: { en: 'Business Landing Pages', ar: 'صفحات تعريف أعمال' },
     description: {
       en: 'Modern high-converting landing pages designed to present your business professionally, generate leads, and increase conversions.',
-      ar: 'صفحات تعريف حديثة عالية التحويل مصممة لعرض عملك احترافياً وجيل عملاء محتملين وزيادة التحويلات.',
+      ar: 'صفحات تعريف حديثة عالية التحويل مصممة لعرض عملك بشكل احترافي، جذب عملاء محتملين، وزيادة التحويلات.',
     },
     deliverables: {
-      en: ['Custom design', 'Responsive layout', 'Modern animations', 'SEO-ready structure', 'Contact forms', 'Fast loading'],
-      ar: ['تصميم مخصص', 'تصميم متجاوب', 'رسوم متحركة حديثة', 'هيكل جاهز للـ SEO', 'نماذج التواصل', 'تحميل سريع'],
+      en: ['Custom design', 'Responsive layout', 'Modern animations', 'SEO-ready structure', 'Contact forms', 'Fast loading pages'],
+      ar: ['تصميم مخصص', 'تخطيط متجاوب', 'حركات حديثة', 'هيكل جاهز للـ SEO', 'نماذج تواصل', 'صفحات سريعة التحميل'],
     },
   },
   {
     icon: BarChart3,
     title: { en: 'Admin Dashboards & Business Systems', ar: 'لوحات تحكم الإدارة ونظم الأعمال' },
     description: {
-      en: 'Complete dashboards and internal systems that help businesses manage operations more efficiently.',
+      en: 'I can build complete dashboards and internal systems that help businesses manage operations more efficiently.',
       ar: 'لوحات تحكم كاملة وأنظمة داخلية تساعد الأعمال على إدارة العمليات بكفاءة أكبر.',
     },
-    deliverables: {
+    examples: {
       en: [
         'Admin dashboards',
         'CRM systems',
@@ -350,18 +373,25 @@ export const services: ServiceCard[] = [
         'Reporting systems',
         'Inventory management',
         'Customer management',
-        'Authentication & Permissions',
-        'Analytics & Search',
       ],
       ar: [
-        'لوحات تحكم إدارة',
+        'لوحات تحكم إدارية',
         'أنظمة CRM',
         'نظم إدارة',
         'أنظمة تقارير',
         'إدارة المخزون',
         'إدارة العملاء',
-        'المصادقة والأذونات',
-        'تحليلات والبحث',
+      ],
+    },
+    deliverables: {
+      en: ['Authentication', 'Roles & Permissions', 'Analytics', 'CRUD Operations', 'Notifications', 'Search & Filtering'],
+      ar: [
+        'المصادقة',
+        'الأدوار والصلاحيات',
+        'التحليلات',
+        'عمليات الإضافة والتعديل والحذف',
+        'الإشعارات',
+        'البحث والفلترة',
       ],
     },
   },
@@ -370,7 +400,7 @@ export const services: ServiceCard[] = [
     title: { en: 'MVP Development', ar: 'تطوير MVP' },
     description: {
       en: 'Turn your idea into a real working product quickly. Perfect for startups and new business ideas.',
-      ar: 'حول فكرتك إلى منتج حقيقي يعمل بسرعة. مثالي للشركات الناشئة والأفكار الأعمالية الجديدة.',
+      ar: 'حوّل فكرتك إلى منتج حقيقي يعمل بسرعة. مناسب للشركات الناشئة وأفكار الأعمال الجديدة.',
     },
     deliverables: {
       en: [
@@ -395,10 +425,10 @@ export const services: ServiceCard[] = [
     icon: Workflow,
     title: { en: 'Custom Web Applications', ar: 'تطبيقات ويب مخصصة' },
     description: {
-      en: 'Tailored web applications built based on your business requirements. Marketplaces, booking systems, e-commerce, and more.',
-      ar: 'تطبيقات ويب مخصصة مبنية وفقاً لمتطلبات عملك. أسواق رقمية ونظم حجز وتجارة إلكترونية والمزيد.',
+      en: 'Build tailored web applications based on your business requirements.',
+      ar: 'بناء تطبيقات ويب مخصصة حسب متطلبات عملك.',
     },
-    deliverables: {
+    examples: {
       en: [
         'Marketplaces',
         'Booking systems',
@@ -419,10 +449,10 @@ export const services: ServiceCard[] = [
     icon: Server,
     title: { en: 'Backend Engineering', ar: 'هندسة الخادم' },
     description: {
-      en: 'Scalable backend systems that power real businesses. REST APIs, authentication, databases, and integrations.',
-      ar: 'أنظمة خادم قابلة للتوسع تشغل الأعمال الحقيقية. APIs وعمليات مصادقة وقواعد بيانات وتكاملات.',
+      en: 'Design and build scalable backend systems that power real businesses.',
+      ar: 'تصميم وبناء أنظمة خلفية قابلة للتوسع تشغل أعمالا حقيقية.',
     },
-    deliverables: {
+    features: {
       en: [
         'REST APIs',
         'Authentication',
@@ -437,7 +467,7 @@ export const services: ServiceCard[] = [
         'REST APIs',
         'المصادقة',
         'التفويض',
-        'قواعس البيانات',
+        'قواعد البيانات',
         'أنظمة البريد',
         'الإشعارات',
         'التكاملات',
@@ -449,8 +479,8 @@ export const services: ServiceCard[] = [
     icon: CloudUpload,
     title: { en: 'Deployment & Launch', ar: 'النشر والإطلاق' },
     description: {
-      en: 'Launch your product online and prepare it for real users. VPS setup, domains, production environment, and monitoring.',
-      ar: 'أطلق منتجك أونلاين واحضره للمستخدمين الحقيقيين. إعداد VPS والنطاقات والبيئة الإنتاجية والمراقبة.',
+      en: 'Launch your product online and prepare it for real users.',
+      ar: 'إطلاق منتجك أونلاين وتجهيزه للمستخدمين الحقيقيين.',
     },
     deliverables: {
       en: ['VPS Setup', 'Domain Configuration', 'Production Environment', 'Database Setup', 'Monitoring'],
@@ -480,48 +510,72 @@ export const processSteps: ProcessStep[] = [
     icon: Brush,
     title: { en: 'UI / UX Design', ar: 'تصميم الواجهة والتجربة' },
     description: {
-      en: 'Create a clean and intuitive experience before writing code. You receive wireframes, screens, and user flows.',
-      ar: 'إنشاء تجربة نظيفة وحدسية قبل كتابة الكود. تتلقى النماذج والشاشات وسير تدفق المستخدم.',
+      en: 'Create a clean and intuitive experience before writing code.',
+      ar: 'إنشاء تجربة نظيفة وسهلة قبل كتابة الكود.',
+    },
+    deliverables: {
+      en: ['Wireframes', 'Screens', 'User flows'],
+      ar: ['Wireframes', 'شاشات', 'مسارات المستخدم'],
     },
   },
   {
     icon: Code2,
     title: { en: 'Frontend Development', ar: 'تطوير الواجهة الأمامية' },
     description: {
-      en: 'Build responsive interfaces and dashboards. You receive functional pages, forms, responsive layouts, and dashboard screens.',
-      ar: 'بناء واجهات متجاوبة ولوحات تحكم. تتلقى صفحات عاملة ونماذج وتخطيطات متجاوبة وشاشات لوحة التحكم.',
+      en: 'Build responsive interfaces and dashboards.',
+      ar: 'بناء واجهات متجاوبة ولوحات تحكم.',
+    },
+    deliverables: {
+      en: ['Functional pages', 'Forms', 'Responsive layouts', 'Dashboard screens'],
+      ar: ['صفحات تعمل بالكامل', 'نماذج', 'تخطيطات متجاوبة', 'شاشات لوحات تحكم'],
     },
   },
   {
     icon: Server,
     title: { en: 'Backend Development', ar: 'تطوير الخادم' },
     description: {
-      en: 'Build APIs, authentication, business logic and database architecture. You receive secure APIs, authentication system, database structure, and documentation.',
-      ar: 'بناء APIs والمصادقة ومنطق الأعمال وبنية قاعدة البيانات. تتلقى APIs آمنة ونظام مصادقة وهيكل قاعدة البيانات والتوثيق.',
+      en: 'Build APIs, authentication, business logic and database architecture.',
+      ar: 'بناء APIs والمصادقة ومنطق الأعمال وبنية قاعدة البيانات.',
+    },
+    deliverables: {
+      en: ['Secure APIs', 'Authentication System', 'Database Structure', 'Documentation'],
+      ar: ['APIs آمنة', 'نظام مصادقة', 'هيكل قاعدة بيانات', 'توثيق'],
     },
   },
   {
     icon: CheckCircle2,
     title: { en: 'Integration & Testing', ar: 'التكامل والاختبار' },
     description: {
-      en: 'Connect all parts together and verify everything works correctly. You receive a working product, bug fixes, and performance improvements.',
-      ar: 'ربط جميع الأجزاء معاً والتحقق من أن كل شيء يعمل بشكل صحيح. تتلقى منتجاً يعمل وإصلاحات الأخطاء وتحسينات الأداء.',
+      en: 'Connect all parts together and verify everything works correctly.',
+      ar: 'ربط كل الأجزاء معا والتأكد أن كل شيء يعمل بشكل صحيح.',
+    },
+    deliverables: {
+      en: ['Working product', 'Bug fixes', 'Performance improvements'],
+      ar: ['منتج يعمل', 'إصلاحات أخطاء', 'تحسينات أداء'],
     },
   },
   {
     icon: CloudUpload,
     title: { en: 'Deployment', ar: 'النشر' },
     description: {
-      en: 'Deploy the project online. You receive a live website, domain setup, and production environment.',
-      ar: 'نشر المشروع أونلاين. تتلقى موقعاً مباشراً وإعداد نطاق وبيئة إنتاجية.',
+      en: 'Deploy the project online.',
+      ar: 'نشر المشروع أونلاين.',
+    },
+    deliverables: {
+      en: ['Live website', 'Domain setup', 'Production environment'],
+      ar: ['موقع مباشر', 'إعداد الدومين', 'بيئة إنتاجية'],
     },
   },
   {
     icon: Gauge,
     title: { en: 'Support & Growth', ar: 'الدعم والنمو' },
     description: {
-      en: 'Continue improving the product after launch. You receive feature enhancements, technical support, and future scalability planning.',
-      ar: 'مواصلة تحسين المنتج بعد الإطلاق. تتلقى تحسينات ميزات ودعم تقني وتخطيط لقابلية التوسع في المستقبل.',
+      en: 'Continue improving the product after launch.',
+      ar: 'مواصلة تحسين المنتج بعد الإطلاق.',
+    },
+    deliverables: {
+      en: ['Feature enhancements', 'Technical support', 'Future scalability planning'],
+      ar: ['تحسينات الميزات', 'دعم تقني', 'تخطيط للتوسع المستقبلي'],
     },
   },
 ]

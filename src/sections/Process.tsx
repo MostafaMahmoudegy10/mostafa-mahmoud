@@ -14,7 +14,9 @@ export function Process({ lang }: { lang: Lang }) {
         {processSteps.map((step, index) => {
           const Icon = step.icon
           const stepTitle = typeof step.title === 'string' ? step.title : step.title[lang]
-          const stepDesc = typeof (step.description || step.text) === 'string' ? (step.description || step.text) : (step.description || step.text)?.[lang]
+          const stepBody = step.description || step.text
+          const stepDesc = typeof stepBody === 'string' ? stepBody : stepBody?.[lang]
+          const deliverables = step.deliverables?.[lang] || []
 
           return (
             <motion.article key={stepTitle} variants={fadeUp} className="grid gap-4 md:grid-cols-[80px_1fr]">
@@ -29,7 +31,7 @@ export function Process({ lang }: { lang: Lang }) {
               <motion.div whileHover={{ x: lang === 'ar' ? -8 : 8 }} className="glass-panel p-5">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div>
-                    <p className="text-sm font-bold text-blue-600">Step {index + 1}</p>
+                    <p className="text-sm font-bold text-blue-600">{lang === 'ar' ? 'خطوة' : 'Step'} {index + 1}</p>
                     <h3 className="mt-1 text-xl font-black text-slate-950">{stepTitle}</h3>
                   </div>
                   <div className="grid h-10 w-10 place-items-center rounded-lg bg-orange-50 text-orange-500 md:hidden">
@@ -37,6 +39,20 @@ export function Process({ lang }: { lang: Lang }) {
                   </div>
                 </div>
                 {stepDesc && <p className="mt-3 text-sm leading-7 text-muted">{stepDesc}</p>}
+                {deliverables.length > 0 && (
+                  <div className="mt-5 rounded-lg border border-slate-200 bg-white/70 p-4">
+                    <p className="mb-3 text-xs font-black uppercase text-orange-600">
+                      {lang === 'ar' ? 'ستحصل على' : 'You will receive'}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {deliverables.map((item) => (
+                        <span key={item} className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-700">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </motion.div>
             </motion.article>
           )
@@ -45,4 +61,3 @@ export function Process({ lang }: { lang: Lang }) {
     </Section>
   )
 }
-
