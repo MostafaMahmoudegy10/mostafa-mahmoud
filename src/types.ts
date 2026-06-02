@@ -74,8 +74,8 @@ export type ServiceCard = {
 
 export type WhyCard = {
   icon: LucideIcon
-  title: string
-  text: string
+  title: string | LocalizedText
+  text?: string | LocalizedText
 }
 
 export type ProcessStep = {

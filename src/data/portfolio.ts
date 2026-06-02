@@ -3,22 +3,19 @@ import {
   CloudUpload,
   Code2,
   Brush,
-  Cpu,
+  BarChart3,
   Gauge,
-  Handshake,
   HeartHandshake,
   Lightbulb,
   Mail,
   MessageCircle,
   PackageCheck,
-  Palette,
   Phone,
   Rocket,
   Search,
   Server,
   ShoppingBag,
   Sparkles,
-  Timer,
   Workflow,
 } from 'lucide-react'
 import brandAddProduct from '../assets/brand-dashboard/add-product-form.png'
@@ -74,20 +71,20 @@ export const copy = {
       placeholder: 'Ready for your next screenshots and links',
     },
     stats: {
-      eyebrow: 'Results',
-      title: 'A compact view of what I\'ve accomplished.',
+      eyebrow: 'What I\'ve Built',
+      title: 'Real projects, real impact.',
     },
     services: {
-      eyebrow: 'What I Can Build For You',
-      title: 'Services and packages I offer to help your business grow.',
+      eyebrow: 'What I Can Build For Your Business',
+      title: 'Services designed for business outcomes, not just code.',
     },
     process: {
       eyebrow: 'How We Build Your Product',
-      title: 'A clear process from your idea to a working product.',
+      title: 'A proven process from idea to growth.',
     },
     why: {
-      eyebrow: 'Why Work With Me',
-      title: 'A mix of engineering discipline and product thinking.',
+      eyebrow: 'Why Clients Choose To Work With Me',
+      title: 'I deliver business value, not just features.',
     },
     contact: {
       eyebrow: 'Contact',
@@ -130,20 +127,20 @@ export const copy = {
       placeholder: 'جاهز لإضافة الصور والروابط لاحقًا',
     },
     stats: {
-      eyebrow: 'النتائج',
-      title: 'ملخص لما أنجزته حتى الآن.',
+      eyebrow: 'ما الذي بنيته',
+      title: 'مشاريع حقيقية، تأثير حقيقي.',
     },
     services: {
-      eyebrow: 'ما الذي أستطيع بناءه لك',
-      title: 'الخدمات والحزم التي أقدمها لمساعدة عملك على النمو.',
+      eyebrow: 'ما الذي أستطيع بناءه لعملك',
+      title: 'خدمات مصممة للنتائج الأعمالية، وليس فقط الكود.',
     },
     process: {
       eyebrow: 'كيف نبني منتجك',
-      title: 'عملية واضحة من فكرتك إلى منتج يعمل فعلاً.',
+      title: 'عملية مثبتة من الفكرة إلى النمو.',
     },
     why: {
-      eyebrow: 'لماذا تعمل معي',
-      title: 'مزيج من الانضباط الهندسي والتفكير المنتج-محور.',
+      eyebrow: 'لماذا يختار العملاء العمل معي',
+      title: 'أقدم قيمة أعمالية، وليس فقط ميزات.',
     },
     contact: {
       eyebrow: 'تواصل',
@@ -319,101 +316,145 @@ export const projects: Project[] = [
 ]
 
 export const stats: Stat[] = [
-  { value: 5, suffix: '+', label: { en: 'Total Projects', ar: 'إجمالي المشاريع' } },
-  { value: 5, suffix: '+', label: { en: 'Satisfied Customers', ar: 'عملاء راضون' } },
-  { value: 100, suffix: '+', label: { en: 'Features Delivered', ar: 'ميزة تم تنفيذها' } },
-  { value: 2, suffix: '+', label: { en: 'Real Business Projects', ar: 'مشاريع أعمال حقيقية' } },
+  { value: 5, suffix: '+', label: { en: 'Projects Delivered', ar: 'مشاريع تم تسليمها' } },
+  { value: 2, suffix: '+', label: { en: 'Real Business Platforms', ar: 'منصات أعمال حقيقية' } },
+  { value: 100, suffix: '+', label: { en: 'Features Implemented', ar: 'ميزة تم تطبيقها' } },
+  { value: 5000, suffix: '+', label: { en: 'Lines of Production Code', ar: 'سطور كود الإنتاج' } },
 ]
 
 export const services: ServiceCard[] = [
   {
     icon: Rocket,
-    title: { en: 'Landing Page', ar: 'صفحة تعريف' },
+    title: { en: 'Business Landing Pages', ar: 'صفحات تعريف أعمال' },
     description: {
-      en: 'A modern landing page for your business, product, service, or campaign with clean design, responsive layout, animations, and clear call-to-action sections.',
-      ar: 'صفحة تعريف حديثة لعملك أو منتجك أو خدمتك أو حملتك بتصميم نظيف، تصميم متجاوب، رسوم متحركة، وأقسام call-to-action واضحة.',
+      en: 'Modern high-converting landing pages designed to present your business professionally, generate leads, and increase conversions.',
+      ar: 'صفحات تعريف حديثة عالية التحويل مصممة لعرض عملك احترافياً وجيل عملاء محتملين وزيادة التحويلات.',
     },
     deliverables: {
-      en: ['Hero section', 'About section', 'Services section', 'Contact section', 'Responsive design', 'Smooth animations'],
-      ar: ['قسم بطل', 'قسم من نحن', 'قسم الخدمات', 'قسم التواصل', 'تصميم متجاوب', 'رسوم متحركة سلسة'],
+      en: ['Custom design', 'Responsive layout', 'Modern animations', 'SEO-ready structure', 'Contact forms', 'Fast loading'],
+      ar: ['تصميم مخصص', 'تصميم متجاوب', 'رسوم متحركة حديثة', 'هيكل جاهز للـ SEO', 'نماذج التواصل', 'تحميل سريع'],
     },
   },
   {
-    icon: Palette,
-    title: { en: 'UI / UX Design', ar: 'تصميم الواجهة والتجربة' },
+    icon: BarChart3,
+    title: { en: 'Admin Dashboards & Business Systems', ar: 'لوحات تحكم الإدارة ونظم الأعمال' },
     description: {
-      en: 'Clean and modern interface design that makes your product easier to understand and more attractive to users.',
-      ar: 'تصميم واجهة نظيف وحديث يجعل منتجك أسهل في الفهم وأكثر جاذبية للمستخدمين.',
+      en: 'Complete dashboards and internal systems that help businesses manage operations more efficiently.',
+      ar: 'لوحات تحكم كاملة وأنظمة داخلية تساعد الأعمال على إدارة العمليات بكفاءة أكبر.',
     },
     deliverables: {
-      en: ['User-friendly layout', 'Clean sections', 'Modern components', 'Better visual hierarchy', 'Business-focused design'],
-      ar: ['تخطيط ودود للمستخدم', 'أقسام نظيفة', 'مكونات حديثة', 'تسلسل بصري أفضل', 'تصميم محور-الأعمال'],
+      en: [
+        'Admin dashboards',
+        'CRM systems',
+        'Management systems',
+        'Reporting systems',
+        'Inventory management',
+        'Customer management',
+        'Authentication & Permissions',
+        'Analytics & Search',
+      ],
+      ar: [
+        'لوحات تحكم إدارة',
+        'أنظمة CRM',
+        'نظم إدارة',
+        'أنظمة تقارير',
+        'إدارة المخزون',
+        'إدارة العملاء',
+        'المصادقة والأذونات',
+        'تحليلات والبحث',
+      ],
     },
   },
   {
-    icon: Code2,
-    title: { en: 'Frontend MVP', ar: 'Frontend MVP' },
+    icon: Lightbulb,
+    title: { en: 'MVP Development', ar: 'تطوير MVP' },
     description: {
-      en: 'A working frontend version of your product idea so you can present it, test it, or show it to potential customers.',
-      ar: 'نسخة frontend تعمل من فكرة منتجك حتى تتمكن من عرضها واختبارها وإظهارها للعملاء المحتملين.',
+      en: 'Turn your idea into a real working product quickly. Perfect for startups and new business ideas.',
+      ar: 'حول فكرتك إلى منتج حقيقي يعمل بسرعة. مثالي للشركات الناشئة والأفكار الأعمالية الجديدة.',
     },
     deliverables: {
-      en: ['Responsive frontend', 'Pages and components', 'Dashboard UI', 'Forms', 'API-ready structure'],
-      ar: ['frontend متجاوب', 'صفحات ومكونات', 'واجهة لوحة تحكم', 'نماذج', 'بنية جاهزة للـ API'],
-    },
-  },
-  {
-    icon: Server,
-    title: { en: 'Backend Development', ar: 'تطوير الخادم' },
-    description: {
-      en: 'A secure and scalable backend system that handles your business logic, data, users, APIs, and integrations.',
-      ar: 'نظام خادم آمن وقابل للتوسع يتعامل مع منطق عملك والبيانات والمستخدمين والـ APIs والتكاملات.',
-    },
-    deliverables: {
-      en: ['REST APIs', 'Authentication', 'Database design', 'Business logic', 'Security', 'API documentation'],
-      ar: ['REST APIs', 'المصادقة', 'تصميم قاعدة البيانات', 'منطق الأعمال', 'الأمان', 'توثيق API'],
+      en: [
+        'Product planning',
+        'Core features',
+        'Responsive frontend',
+        'Backend APIs',
+        'Database',
+        'Deployment',
+      ],
+      ar: [
+        'تخطيط المنتج',
+        'الميزات الأساسية',
+        'واجهة أمامية متجاوبة',
+        'APIs الخادم',
+        'قاعدة البيانات',
+        'النشر',
+      ],
     },
   },
   {
     icon: Workflow,
-    title: { en: 'Full Product Development', ar: 'تطوير المنتج الكامل' },
+    title: { en: 'Custom Web Applications', ar: 'تطبيقات ويب مخصصة' },
     description: {
-      en: 'From idea to launch. I can help turn your business idea into a real working product.',
-      ar: 'من الفكرة إلى الإطلاق. أستطيع مساعدتك في تحويل فكرة عملك إلى منتج حقيقي يعمل.',
+      en: 'Tailored web applications built based on your business requirements. Marketplaces, booking systems, e-commerce, and more.',
+      ar: 'تطبيقات ويب مخصصة مبنية وفقاً لمتطلبات عملك. أسواق رقمية ونظم حجز وتجارة إلكترونية والمزيد.',
     },
     deliverables: {
       en: [
-        'Understand the idea',
-        'Plan the features',
-        'Design the UI',
-        'Build the frontend',
-        'Build the backend',
-        'Connect everything',
-        'Test the product',
-        'Deploy it online',
+        'Marketplaces',
+        'Booking systems',
+        'E-Commerce Platforms',
+        'SaaS Products',
+        'Internal Business Tools',
       ],
       ar: [
-        'فهم الفكرة',
-        'تخطيط الميزات',
-        'تصميم الواجهة',
-        'بناء الـ Frontend',
-        'بناء الـ Backend',
-        'ربط كل شيء',
-        'اختبار المنتج',
-        'نشره أونلاين',
+        'أسواق رقمية',
+        'نظم الحجز',
+        'منصات التجارة الإلكترونية',
+        'منتجات SaaS',
+        'أدوات أعمال داخلية',
+      ],
+    },
+  },
+  {
+    icon: Server,
+    title: { en: 'Backend Engineering', ar: 'هندسة الخادم' },
+    description: {
+      en: 'Scalable backend systems that power real businesses. REST APIs, authentication, databases, and integrations.',
+      ar: 'أنظمة خادم قابلة للتوسع تشغل الأعمال الحقيقية. APIs وعمليات مصادقة وقواعد بيانات وتكاملات.',
+    },
+    deliverables: {
+      en: [
+        'REST APIs',
+        'Authentication',
+        'Authorization',
+        'Databases',
+        'Email Systems',
+        'Notifications',
+        'Integrations',
+        'Event Driven Architecture',
+      ],
+      ar: [
+        'REST APIs',
+        'المصادقة',
+        'التفويض',
+        'قواعس البيانات',
+        'أنظمة البريد',
+        'الإشعارات',
+        'التكاملات',
+        'البنية الموجهة للأحداث',
       ],
     },
   },
   {
     icon: CloudUpload,
-    title: { en: 'Deployment & Hosting', ar: 'النشر والاستضافة' },
+    title: { en: 'Deployment & Launch', ar: 'النشر والإطلاق' },
     description: {
-      en: 'Deploy your website or application online and prepare it for real users.',
-      ar: 'انشر موقعك أو تطبيقك أونلاين وحضره للمستخدمين الحقيقيين.',
+      en: 'Launch your product online and prepare it for real users. VPS setup, domains, production environment, and monitoring.',
+      ar: 'أطلق منتجك أونلاين واحضره للمستخدمين الحقيقيين. إعداد VPS والنطاقات والبيئة الإنتاجية والمراقبة.',
     },
     deliverables: {
-      en: ['VPS setup', 'Domain connection', 'Server configuration', 'Database setup', 'Production deployment'],
-      ar: ['إعداد VPS', 'ربط النطاق', 'إعدادات الخادم', 'إعداد قاعدة البيانات', 'نشر الإنتاج'],
+      en: ['VPS Setup', 'Domain Configuration', 'Production Environment', 'Database Setup', 'Monitoring'],
+      ar: ['إعداد VPS', 'إعدادات النطاق', 'البيئة الإنتاجية', 'إعداد قاعدة البيانات', 'المراقبة'],
     },
   },
 ]
@@ -421,77 +462,101 @@ export const services: ServiceCard[] = [
 export const processSteps: ProcessStep[] = [
   {
     icon: MessageCircle,
-    title: { en: 'Discovery Call', ar: 'جلسة الاكتشاف' },
+    title: { en: 'Discovery & Business Understanding', ar: 'الاكتشاف وفهم الأعمال' },
     description: {
-      en: 'We discuss your idea, business goals, users, and the main problem you want to solve.',
-      ar: 'نناقش فكرتك والأهداف الأعمال والمستخدمين والمشكلة الرئيسية التي تريد حلها.',
+      en: 'We discuss your idea, target audience, competitors, and business goals.',
+      ar: 'نناقش فكرتك والجمهور المستهدف والمنافسين والأهداف الأعمالية.',
     },
   },
   {
     icon: Lightbulb,
-    title: { en: 'Feature Planning', ar: 'تخطيط الميزات' },
+    title: { en: 'Planning & Feature Definition', ar: 'التخطيط وتحديد الميزات' },
     description: {
-      en: 'We define the important features for the first version and decide what should be included in the MVP.',
-      ar: 'نحدد الميزات المهمة للنسخة الأولى ونقرر ما يجب أن يتضمنه MVP.',
+      en: 'We define the MVP and prioritize features based on business impact.',
+      ar: 'نحدد MVP ونحدد أولويات الميزات بناءً على التأثير الأعمالي.',
     },
   },
   {
     icon: Brush,
     title: { en: 'UI / UX Design', ar: 'تصميم الواجهة والتجربة' },
     description: {
-      en: 'I create a clean user-friendly design so the product is easy to use and visually attractive.',
-      ar: 'أنشئ تصميماً نظيفاً ودوداً للمستخدم حتى يكون المنتج سهل الاستخدام وجذاباً بصرياً.',
+      en: 'Create a clean and intuitive experience before writing code. You receive wireframes, screens, and user flows.',
+      ar: 'إنشاء تجربة نظيفة وحدسية قبل كتابة الكود. تتلقى النماذج والشاشات وسير تدفق المستخدم.',
     },
   },
   {
     icon: Code2,
     title: { en: 'Frontend Development', ar: 'تطوير الواجهة الأمامية' },
     description: {
-      en: 'I build the frontend pages, dashboards, forms, and user flows.',
-      ar: 'أبني صفحات الـ Frontend ولوحات التحكم والنماذج وسير العمل للمستخدم.',
+      en: 'Build responsive interfaces and dashboards. You receive functional pages, forms, responsive layouts, and dashboard screens.',
+      ar: 'بناء واجهات متجاوبة ولوحات تحكم. تتلقى صفحات عاملة ونماذج وتخطيطات متجاوبة وشاشات لوحة التحكم.',
     },
   },
   {
     icon: Server,
     title: { en: 'Backend Development', ar: 'تطوير الخادم' },
     description: {
-      en: 'I build the APIs, authentication, database, business logic, and integrations.',
-      ar: 'أبني الـ APIs والمصادقة وقاعدة البيانات ومنطق الأعمال والتكاملات.',
+      en: 'Build APIs, authentication, business logic and database architecture. You receive secure APIs, authentication system, database structure, and documentation.',
+      ar: 'بناء APIs والمصادقة ومنطق الأعمال وبنية قاعدة البيانات. تتلقى APIs آمنة ونظام مصادقة وهيكل قاعدة البيانات والتوثيق.',
     },
   },
   {
     icon: CheckCircle2,
-    title: { en: 'Testing & Improvements', ar: 'الاختبار والتحسينات' },
+    title: { en: 'Integration & Testing', ar: 'التكامل والاختبار' },
     description: {
-      en: 'I test the main flows, fix issues, improve performance, and make the experience smoother.',
-      ar: 'أختبر الـ flows الرئيسية، أصلح المشاكل، أحسّن الأداء، وأجعل التجربة أسلس.',
+      en: 'Connect all parts together and verify everything works correctly. You receive a working product, bug fixes, and performance improvements.',
+      ar: 'ربط جميع الأجزاء معاً والتحقق من أن كل شيء يعمل بشكل صحيح. تتلقى منتجاً يعمل وإصلاحات الأخطاء وتحسينات الأداء.',
     },
   },
   {
     icon: CloudUpload,
     title: { en: 'Deployment', ar: 'النشر' },
     description: {
-      en: 'The project is deployed online with domain, server, database, and production setup.',
-      ar: 'ينشر المشروع أونلاين مع النطاق والخادم وقاعدة البيانات وإعدادات الإنتاج.',
+      en: 'Deploy the project online. You receive a live website, domain setup, and production environment.',
+      ar: 'نشر المشروع أونلاين. تتلقى موقعاً مباشراً وإعداد نطاق وبيئة إنتاجية.',
     },
   },
   {
     icon: Gauge,
     title: { en: 'Support & Growth', ar: 'الدعم والنمو' },
     description: {
-      en: 'After launch, we can improve the product, add new features, and grow it based on user feedback.',
-      ar: 'بعد الإطلاق، نستطيع تحسين المنتج وإضافة ميزات جديدة ونموه بناءً على ملاحظات المستخدمين.',
+      en: 'Continue improving the product after launch. You receive feature enhancements, technical support, and future scalability planning.',
+      ar: 'مواصلة تحسين المنتج بعد الإطلاق. تتلقى تحسينات ميزات ودعم تقني وتخطيط لقابلية التوسع في المستقبل.',
     },
   },
 ]
 
 export const whyCards: WhyCard[] = [
-  { icon: Search, title: 'Problem Solving', text: 'I focus on the real business problem before choosing the technical path.' },
-  { icon: Code2, title: 'Clean Code', text: 'Readable structure, maintainable components, and practical engineering choices.' },
-  { icon: Handshake, title: 'Business Understanding', text: 'I care about how the product helps customers, teams, and operations.' },
-  { icon: Timer, title: 'Fast Delivery', text: 'Move quickly while keeping the product clear, stable, and useful.' },
-  { icon: MessageCircle, title: 'Communication', text: 'Clear updates, simple language, and collaborative decision making.' },
-  { icon: Cpu, title: 'Product Thinking', text: 'I think about flows, edge cases, growth, and future improvements.' },
+  {
+    icon: Search,
+    title: { en: 'Business Mindset', ar: 'عقلية الأعمال' },
+    text: { en: 'I focus on solving business problems, not only writing code.', ar: 'أركز على حل مشاكل الأعمال، وليس فقط كتابة الكود.' },
+  },
+  {
+    icon: Workflow,
+    title: { en: 'End-to-End Development', ar: 'التطوير من البداية إلى النهاية' },
+    text: { en: 'From idea to deployment, everything can be handled in one place.', ar: 'من الفكرة إلى النشر، كل شيء يمكن التعامل معه في مكان واحد.' },
+  },
+  {
+    icon: Rocket,
+    title: { en: 'Scalable Solutions', ar: 'حلول قابلة للتوسع' },
+    text: { en: 'I build systems that can grow with your business.', ar: 'أبني أنظمة تستطيع أن تنمو مع عملك.' },
+  },
+  {
+    icon: MessageCircle,
+    title: { en: 'Clear Communication', ar: 'التواصل الواضح' },
+    text: { en: 'Regular updates and transparent progress throughout the project.', ar: 'تحديثات منتظمة وتقدم شفاف طوال المشروع.' },
+  },
+  {
+    icon: Sparkles,
+    title: { en: 'Modern Technologies', ar: 'تقنيات حديثة' },
+    text: { en: 'Using modern tools and best practices to build reliable products.', ar: 'استخدام الأدوات الحديثة وأفضل الممارسات لبناء منتجات موثوقة.' },
+  },
+  {
+    icon: HeartHandshake,
+    title: { en: 'Long-Term Partnership', ar: 'شراكة طويلة الأمد' },
+    text: { en: 'My goal is not only delivering a project, but helping businesses grow and improve over time.', ar: 'هدفي ليس فقط تسليم المشروع، بل مساعدة الأعمال على النمو والتحسن بمرور الوقت.' },
+  },
 ]
 
 export const contactItems: ContactItem[] = [
