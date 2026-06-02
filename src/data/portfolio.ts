@@ -202,7 +202,6 @@ export const projects: Project[] = [
       { label: 'GitHub Link', href: configurableLinks.styleHubGithub },
       { label: 'Swagger Link', href: configurableLinks.styleHubSwagger },
       { label: 'Medium Article', href: configurableLinks.styleHubMedium },
-      { label: 'Screenshots', href: configurableLinks.styleHubScreenshots },
     ],
     screenshots: [
       { src: brandDashboard, alt: 'StyleHub brand dashboard performance overview', label: 'Brand Dashboard' },
@@ -238,7 +237,6 @@ export const projects: Project[] = [
     stack: ['Spring Boot', 'MySQL', 'Thymeleaf', 'Bootstrap', 'Cloudinary', 'Heroku'],
     links: [
       { label: 'GitHub Link', href: configurableLinks.elHabashyGithub },
-      { label: 'Screenshots', href: configurableLinks.elHabashyScreenshots },
     ],
     screenshots: [
       { src: '/assets/gallery/elhabashy-english-home-14.png', alt: 'El Habashy English landing page', label: 'English Landing' },
